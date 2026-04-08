@@ -2,10 +2,7 @@
 #include "buttons.hpp"
 #include "hazard.hpp"
 #include <SFML/Graphics.hpp>
-#include <SFML/Graphics/Color.hpp>
-#include <SFML/Graphics/RectangleShape.hpp>
 #include <SFML/Window.hpp>
-#include <SFML/Window/WindowEnums.hpp>
 #include <chrono>
 #include <ctime>
 #include <windows.h>
@@ -44,8 +41,6 @@ int main() {
           hKey, valueName, 0, REG_SZ,
           reinterpret_cast<const BYTE *>(defaultValue),
           static_cast<DWORD>((wcslen(defaultValue) + 1) * sizeof(wchar_t)));
-      RegCloseKey(hKey);
-      return EXIT_SUCCESS;
     }
 
     RegCloseKey(hKey);
