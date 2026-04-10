@@ -51,7 +51,7 @@ int main() {
 
   if (lastValue[0] != L'\0') {
     int lastYear{0}, lastMonth{0};
-    if (swscanf(lastValue, L"%4d-%2d", &lastYear, &lastMonth) == 2) {
+    if (swscanf_s(lastValue, L"%4d-%2d", &lastYear, &lastMonth) == 2) {
 
       if (lastYear - 1900 >= tmBuf.tm_year ||
           ((tmBuf.tm_year + 1900 - lastYear == 1) &&
