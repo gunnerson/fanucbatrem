@@ -1,6 +1,8 @@
 ## Description
 The application is designed to autorun on Windows boot, check if the deadline is expired and either quietly shutdown or open a window. Big red button on the bottom resets the counter.
 
+![](preview.png)
+
 ## Installation
 1. Simplest way is to use the provided `FanucBatRem.msi` installer. Specify the installation directory, restart Windows to make sure it's working, press the red button to reset the counter (it will close the window). You can restart Windows again to make sure it doesn't pop up anymore.
 2. Copy `fanucbatrem.exe` executable somewhere on the hard drive. Make it autorun on Windows boot. Check correct operation.
